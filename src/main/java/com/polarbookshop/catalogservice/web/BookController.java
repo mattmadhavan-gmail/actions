@@ -39,6 +39,7 @@ public class BookController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Book post(@Valid @RequestBody Book book) {
+        System.out.println("Matt is cool");
         return bookService.addBookToCatalog(book);
     }
 
